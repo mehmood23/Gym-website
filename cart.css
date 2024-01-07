@@ -1,0 +1,52 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+}
+table{
+    padding: 0px 130px;
+    background-color: sandybrown;
+    border: 1px solid blue;
+    align-items: center;
+    margin: auto;
+
+    
+}
+#cart_details table{
+    width:50%;
+   text-align: center;
+   border-spacing: 10px;
+   border-collapse: separate;
+   
+}
+#cart_details table tr td{
+    padding: 30px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid #eee;
+}
+#cart_details table, th, td {
+    border: 1px black solid;
+ }
+h1{
+    font-family: cursive;
+    color: salmon;
+    font-size: 4.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.home_btn{
+    float: right;
+    padding: 5px 20px;
+    background-color: seagreen;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 5%;
+    text-decoration: none;
+    color: wheat;
+}
+.home_btn:hover{
+    transition: 1s ease-in;
+    padding: 5px 25px;
+}

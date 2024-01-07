@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myGym</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script rel="text/javascript" type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar" id="navbar">
+        <ul>
+            <div class="icon">
+               <a href="index.html"> <img src="images/db.png" height="70px" width="100px"></a>
+            </div>
+            <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+            <li><a href="#About"><i class="fa fa-chevron-right" aria-hidden="true"></i>About</a></li>
+            <li><a href="#Subscription"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>Subscription</a></li>
+            <li><a href="#Contact"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
+            <li><a id="cart" href="cart.html">Cart <span><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></span><span id="Total_Items">0</span></a></li>
+           
+        </ul>
+    </nav>
+    <hr />
+
+    <!-- Carousel -->
+<div class="container">
+<div class="cover">
+    <img src="images/Carousel.jpg" alt="cover" width="100%">
+   
+</div>
+</div>
+<!-- About Section -->
+<div class="container">
+    <div id="About"><h2>ABOUT US</h2>
+    <hr class="hr_des"/>
+    </div>
+    <p>
+       <span class="lor">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has 
+        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
+        in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+        like Aldus PageMaker including versions of Lorem Ipsum.<br/><br/>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has 
+        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
+        in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+        like Aldus PageMaker including versions of Lorem Ipsum.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has 
+        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
+        in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+        like Aldus PageMaker including versions of Lorem Ipsum. <br/><br/>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has 
+        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
+        in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+        like Aldus PageMaker including versions of Lorem Ipsum.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has 
+        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
+        in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+        like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+</div>
+
+    <!-- Card -->
+    <div class="container">
+       
+        <div class="head" id="Subscription"><h2>MUST HAVE SUBCRIPTION PLAN</h2>
+            <hr class="hr_des"/></div>
+   
+        <div class="row">
+            <div class="col">
+                <img class="subs"  src="images/spartan.jpg" alt="Spatan" height="250px" width="250px">
+               <h1>Spartan Carton</h1> 
+               <p class="desc">Cost - Spartan Carton starts at $25 and you can upgrade to the advanced "Warrior Box".
+                Spartan Carton offers two types of boxes. The beginner “Citizen Box” includes at least 3 snack and three supplements in addition to some light workout gear.
+               The advanced “warrior” bundle comes with all the items of the "Citizen" option along with extra premium items such as advanced outdoor workout gear like suspension straps, and fire starters, etc.                All of this with no risk; Spartan offers a no questions asked 30 day money back guarantee.</p>
+            <button id="btn" onclick="addtoCart('Spartan_Carton',1)"><i class="fa fa-hand-paper-o" aria-hidden="true"></i> Grab Now</button>
+            </div>
+            <div class="col">
+                <img class="subs"  src="images/gainz.jpeg" alt="Spatan" height="250px" width="250px">
+                <h1>Gainzbox</h1> 
+                <p class="desc">Cost - Gainzbox is nicely priced starting at $32.
+                    Every package of GainzBox comes with a variable amount of products as they introduce a new beefy offering every month. But it usually includes healthy protein-rich snacks, high-quality athletic apparel and other gear to get excited about in your day to day fitness routine.
+                    Boasting a "Worth twice the cost", slogan, the over-all value of the box just can't be beat. Gainzbox is a "Top Pick" Fitness Box recommendation. </p>
+                    <button id="btn" onclick="addtoCart('Gainzbox',1)"><i class="fa fa-hand-paper-o" aria-hidden="true"></i>Grab Now</button>
+                </div>
+            <div class="col">
+                <img class="subs"  src="images/jackedpack.jpeg" alt="Spatan" height="250px" width="250px">
+                <h1>JackedPack</h1>
+                <p class="desc">Cost - JackedPack subscriptions start at $15. Every shipment of JackedPack offers 5-10 samples of high-quality snacks that are selected based on the requirements which you provide before ordering. JackedPack offers the added benefit of providing double the amount of samples when ordering your first box!</p>
+                <button id="btn" onclick="addtoCart('JackedPack',1)"><i class="fa fa-hand-paper-o" aria-hidden="true"></i>Grab Now</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img class="subs" src="images/fitlife.jpg" alt="Spatan" height="250px" width="250px">
+               <h1>Fit Lifestyle Box</h1>
+               <p class="desc">Cost - Fit Lifestyle Box costs start as low as $21, monthly.
+                Motivation in a box? In every delivery, you will receive a full size product, healthy snacks, supplements samples, workout challenges and much more. Fit Lifestyle Box offers different types of boxes for you to choose from according to your goals, and the 6-9 products included vary based on your choice box. The three options are Get Lean, Get Strong, and Stay Fit. Let's get it!</p> 
+                <button id="btn" onclick="addtoCart('Fit_Lifestyle_Box',1)"> <i class="fa fa-hand-paper-o" aria-hidden="true"></i>Grab Now</button>
+            </div>
+            <div class="col">
+                <img class="subs"  src="images/Musclecrate.jpg" alt="Spatan" height="250px" width="250px">
+                <h1>Muscle Crate</h1> 
+                <p class="desc">Cost - Muscle Crate monthly subscription box starts at £15.00, however there is a premium option at £29.99.
+                    Hands down one of the best subscriptions coming out the UK, each crate contains 12+ supplements which make a great addition to your monthly workout routine and if you're a slightly more advanced fitness freak then there is the premium option that provides all the contents of the original, plus extra supplements and a 30 serving tub of protein.</p>
+                    <button id="btn" onclick="addtoCart('Muscle_Crate',1)"><i class="fa fa-hand-paper-o" aria-hidden="true"></i>Grab Now</button>
+                </div>
+            <div class="col">
+                <img  class="subs" src="images/Myketo.jpeg" alt="Spatan" height="250px" width="250px">
+                <h1>My Keto Snack Box</h1>
+                <p class="desc">Cost - My Keto Snack Box monthly subscription starts at $36.
+                    In every package of My Keto Snack Box you get 6-8 snacks which are targeted to those of you following a ketogenic diet, with a guarantee of no more than 5 grams of carbs per serving in any of the snacks offered, allowing you to taste some delicious items which normally your ketogenic diet might keep you far away from.</p>
+                    <button id="btn" onclick="addtoCart('My_Keto_Snack_Box',1)"> <i class="fa fa-hand-paper-o" aria-hidden="true"></i>Grab Now</button>
+                </div>
+        </div>
+    </div>
+   <!-- contact form -->
+   <div class="container" id="Contact">
+       <form >
+           <fieldset>
+               <h2>Contact Info </h2>
+               <hr class="hr_des"/>
+                <label for="FullName">Full Name : </label>
+                    <input type="text" id="FullName" placeholder="Mickey Mouse">
+                    <label for="Address">Address : </label>
+                    <input type="text" id="Address" placeholder="xyz,CA">
+                    <label for="dob">D.O.B :</label>
+                    <input type="date" id="dob">
+                    <label for="phone">Contact Info : </label>
+                    <input type="text" id="phone" placeholder="12345 12345">
+                    <button class="sub">Submit</button>
+           </fieldset>
+       </form>
+   </div>
+   <!-- footer -->
+   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="head">Copyright &copy; 2017 All Rights Reserved by 
+       <a href="#">MMA</a>.
+          </p>
+        </div>
+
+        <div class="container">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
